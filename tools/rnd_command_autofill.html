@@ -15,24 +15,36 @@
             min-height: 100vh;
             margin: 0;
             font-family: sans-serif;
+            padding: 20px;
         }
         .container {
             background-color: #ffffff;
             color: #333333;
             padding: 2rem;
             border-radius: 8px;
-            width: 90%;
-            max-width: 600px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-        }
-        input {
             width: 100%;
-            padding: 10px;
-            margin-top: 5px;
+            max-width: 650px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+        }
+        .input-group {
             margin-bottom: 20px;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select {
+            width: 100%;
+            padding: 12px;
             border: 1px solid #ccc;
             border-radius: 4px;
-            font-size: 1.1rem;
+            font-size: 1rem;
+            background-color: #fff;
+            color: #333;
+        }
+        input::placeholder {
+            color: #aaa;
         }
         .output-box {
             background-color: #f4f4f4;
@@ -41,64 +53,250 @@
             border: 1px solid #ddd;
             word-break: break-all;
             font-family: monospace;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             margin-bottom: 15px;
-            min-height: 50px;
+            min-height: 80px;
+            color: #1a1a1a;
+            line-height: 1.4;
         }
         .copy-btn {
             background-color: #333;
             color: white;
-            padding: 8px 16px;
+            padding: 10px 20px;
             border: none;
             border-radius: 4px;
             cursor: pointer;
-            transition: background 0.2s;
+            font-weight: bold;
         }
         .copy-btn:hover {
             background-color: #555;
         }
-        .copy-btn:active {
-            transform: scale(0.98);
-        }
-        .label {
-            font-weight: bold;
-            display: block;
-        }
         #copy-status {
             margin-left: 10px;
-            font-size: 0.8rem;
-            color: green;
+            font-size: 0.9rem;
+            color: #2e7d32;
             display: none;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <label class="label">a = (diameter)</label>
-        <input type="number" id="inputA" placeholder="Enter a number..." value="1">
+        <div class="input-group">
+            <label>a =</label>
+            <input type="number" id="inputA" placeholder="(diameter)" value="1">
+        </div>
 
-        <div class="label" style="margin-bottom: 5px;">Result:</div>
+        <div class="input-group">
+            <label>Particle</label>
+            <select id="particleSelect">
+                <option value="">(default)</option>
+                <option value="minecraft:arrow_spell_emitter">minecraft:arrow_spell_emitter</option>
+                <option value="minecraft:balloon_gas_particle">minecraft:balloon_gas_particle</option>
+                <option value="minecraft:basic_bubble_particle">minecraft:basic_bubble_particle</option>
+                <option value="minecraft:basic_bubble_particle_manual">minecraft:basic_bubble_particle_manual</option>
+                <option value="minecraft:basic_crit_particle">minecraft:basic_crit_particle</option>
+                <option value="minecraft:basic_flame_particle">minecraft:basic_flame_particle</option>
+                <option value="minecraft:basic_portal_particle">minecraft:basic_portal_particle</option>
+                <option value="minecraft:basic_smoke_particle">minecraft:basic_smoke_particle</option>
+                <option value="minecraft:biome_tinted_leaves_particle">minecraft:biome_tinted_leaves_particle</option>
+                <option value="minecraft:bleach">minecraft:bleach</option>
+                <option value="minecraft:block_destruct">minecraft:block_destruct</option>
+                <option value="minecraft:block_slide">minecraft:block_slide</option>
+                <option value="minecraft:blue_flame_particle">minecraft:blue_flame_particle</option>
+                <option value="minecraft:breaking_item_icon">minecraft:breaking_item_icon</option>
+                <option value="minecraft:breaking_item_terrain">minecraft:breaking_item_terrain</option>
+                <option value="minecraft:breeze_ground_particle">minecraft:breeze_ground_particle</option>
+                <option value="minecraft:breeze_wind_explosion_emitter">minecraft:breeze_wind_explosion_emitter</option>
+                <option value="minecraft:bubble_column_bubble">minecraft:bubble_column_bubble</option>
+                <option value="minecraft:bubble_column_down_particle">minecraft:bubble_column_down_particle</option>
+                <option value="minecraft:bubble_column_up_particle">minecraft:bubble_column_up_particle</option>
+                <option value="minecraft:camera_shoot_explosion">minecraft:camera_shoot_explosion</option>
+                <option value="minecraft:campfire_smoke_particle">minecraft:campfire_smoke_particle</option>
+                <option value="minecraft:campfire_tall_smoke_particle">minecraft:campfire_tall_smoke_particle</option>
+                <option value="minecraft:candle_flame_particle">minecraft:candle_flame_particle</option>
+                <option value="minecraft:cauldron_bubble_particle">minecraft:cauldron_bubble_particle</option>
+                <option value="minecraft:cauldron_explosion_emitter">minecraft:cauldron_explosion_emitter</option>
+                <option value="minecraft:cauldron_spell_emitter">minecraft:cauldron_spell_emitter</option>
+                <option value="minecraft:cauldron_splash_particle">minecraft:cauldron_splash_particle</option>
+                <option value="minecraft:cherry_leaves_particle">minecraft:cherry_leaves_particle</option>
+                <option value="minecraft:colored_flame_particle">minecraft:colored_flame_particle</option>
+                <option value="minecraft:conduit_absorb_particle">minecraft:conduit_absorb_particle</option>
+                <option value="minecraft:conduit_attack_emitter">minecraft:conduit_attack_emitter</option>
+                <option value="minecraft:conduit_particle">minecraft:conduit_particle</option>
+                <option value="minecraft:creaking_crumble_body">minecraft:creaking_crumble_body</option>
+                <option value="minecraft:creaking_crumble_head">minecraft:creaking_crumble_head</option>
+                <option value="minecraft:creaking_heart_trail">minecraft:creaking_heart_trail</option>
+                <option value="minecraft:critical_hit_emitter">minecraft:critical_hit_emitter</option>
+                <option value="minecraft:crop_growth_area_emitter">minecraft:crop_growth_area_emitter</option>
+                <option value="minecraft:crop_growth_emitter">minecraft:crop_growth_emitter</option>
+                <option value="minecraft:death_explosion_emitter">minecraft:death_explosion_emitter</option>
+                <option value="minecraft:dolphin_move_particle">minecraft:dolphin_move_particle</option>
+                <option value="minecraft:dragon_breath_fire">minecraft:dragon_breath_fire</option>
+                <option value="minecraft:dragon_breath_lingering">minecraft:dragon_breath_lingering</option>
+                <option value="minecraft:dragon_breath_trail">minecraft:dragon_breath_trail</option>
+                <option value="minecraft:dragon_death_explosion_emitter">minecraft:dragon_death_explosion_emitter</option>
+                <option value="minecraft:dragon_destroy_block">minecraft:dragon_destroy_block</option>
+                <option value="minecraft:dragon_dying_explosion">minecraft:dragon_dying_explosion</option>
+                <option value="minecraft:dust_plume">minecraft:dust_plume</option>
+                <option value="minecraft:egg_destroy_emitter">minecraft:egg_destroy_emitter</option>
+                <option value="minecraft:electric_spark_particle">minecraft:electric_spark_particle</option>
+                <option value="minecraft:elephant_tooth_paste_vapor_particle">minecraft:elephant_tooth_paste_vapor_particle</option>
+                <option value="minecraft:enchanting_table_particle">minecraft:enchanting_table_particle</option>
+                <option value="minecraft:end_chest">minecraft:end_chest</option>
+                <option value="minecraft:endrod">minecraft:endrod</option>
+                <option value="minecraft:evocation_fang_particle">minecraft:evocation_fang_particle</option>
+                <option value="minecraft:evoker_spell">minecraft:evoker_spell</option>
+                <option value="minecraft:explosion_manual">minecraft:explosion_manual</option>
+                <option value="minecraft:explosion_particle">minecraft:explosion_particle</option>
+                <option value="minecraft:eye_of_ender_bubble_particle">minecraft:eye_of_ender_bubble_particle</option>
+                <option value="minecraft:eyeblossom_close">minecraft:eyeblossom_close</option>
+                <option value="minecraft:eyeblossom_open">minecraft:eyeblossom_open</option>
+                <option value="minecraft:eyeofender_death_explode_particle">minecraft:eyeofender_death_explode_particle</option>
+                <option value="minecraft:falling_border_dust_particle">minecraft:falling_border_dust_particle</option>
+                <option value="minecraft:falling_dust">minecraft:falling_dust</option>
+                <option value="minecraft:falling_dust_concrete_powder_particle">minecraft:falling_dust_concrete_powder_particle</option>
+                <option value="minecraft:falling_dust_dragon_egg_particle">minecraft:falling_dust_dragon_egg_particle</option>
+                <option value="minecraft:falling_dust_gravel_particle">minecraft:falling_dust_gravel_particle</option>
+                <option value="minecraft:falling_dust_red_sand_particle">minecraft:falling_dust_red_sand_particle</option>
+                <option value="minecraft:falling_dust_sand_particle">minecraft:falling_dust_sand_particle</option>
+                <option value="minecraft:falling_dust_scaffolding_particle">minecraft:falling_dust_scaffolding_particle</option>
+                <option value="minecraft:falling_dust_top_snow_particle">minecraft:falling_dust_top_snow_particle</option>
+                <option value="minecraft:firefly_particle">minecraft:firefly_particle</option>
+                <option value="minecraft:fish_hook_particle">minecraft:fish_hook_particle</option>
+                <option value="minecraft:fish_pos_particle">minecraft:fish_pos_particle</option>
+                <option value="minecraft:glow_particle">minecraft:glow_particle</option>
+                <option value="minecraft:guardian_attack_particle">minecraft:guardian_attack_particle</option>
+                <option value="minecraft:heart_particle">minecraft:heart_particle</option>
+                <option value="minecraft:honey_drip_particle">minecraft:honey_drip_particle</option>
+                <option value="minecraft:huge_explosion_emitter">minecraft:huge_explosion_emitter</option>
+                <option value="minecraft:huge_explosion_lab_misc_emitter">minecraft:huge_explosion_lab_misc_emitter</option>
+                <option value="minecraft:ice_evaporation_emitter">minecraft:ice_evaporation_emitter</option>
+                <option value="minecraft:infested_ambient">minecraft:infested_ambient</option>
+                <option value="minecraft:infested_emitter">minecraft:infested_emitter</option>
+                <option value="minecraft:ink_emitter">minecraft:ink_emitter</option>
+                <option value="minecraft:knockback_roar_particle">minecraft:knockback_roar_particle</option>
+                <option value="minecraft:lab_table_heatblock_dust_particle">minecraft:lab_table_heatblock_dust_particle</option>
+                <option value="minecraft:lab_table_misc_mystical_particle">minecraft:lab_table_misc_mystical_particle</option>
+                <option value="minecraft:large_explosion">minecraft:large_explosion</option>
+                <option value="minecraft:lava_drip_particle">minecraft:lava_drip_particle</option>
+                <option value="minecraft:lava_particle">minecraft:lava_particle</option>
+                <option value="minecraft:llama_spit_smoke">minecraft:llama_spit_smoke</option>
+                <option value="minecraft:magic_critical_hit_emitter">minecraft:magic_critical_hit_emitter</option>
+                <option value="minecraft:magnesium_salts_emitter">minecraft:magnesium_salts_emitter</option>
+                <option value="minecraft:misc_fire_vapor_particle">minecraft:misc_fire_vapor_particle</option>
+                <option value="minecraft:mob_block_spawn_emitter">minecraft:mob_block_spawn_emitter</option>
+                <option value="minecraft:mob_portal">minecraft:mob_portal</option>
+                <option value="minecraft:mobflame_emitter">minecraft:mobflame_emitter</option>
+                <option value="minecraft:mobflame_single">minecraft:mobflame_single</option>
+                <option value="minecraft:mobspell_ambient">minecraft:mobspell_ambient</option>
+                <option value="minecraft:mobspell_emitter">minecraft:mobspell_emitter</option>
+                <option value="minecraft:mobspell_lingering">minecraft:mobspell_lingering</option>
+                <option value="minecraft:mycelium_dust_particle">minecraft:mycelium_dust_particle</option>
+                <option value="minecraft:nectar_drip_particle">minecraft:nectar_drip_particle</option>
+                <option value="minecraft:note_particle">minecraft:note_particle</option>
+                <option value="minecraft:obsidian_glow_dust_particle">minecraft:obsidian_glow_dust_particle</option>
+                <option value="minecraft:obsidian_tear_particle">minecraft:obsidian_tear_particle</option>
+                <option value="minecraft:ominous_spawning_particle">minecraft:ominous_spawning_particle</option>
+                <option value="minecraft:oozing_ambient">minecraft:oozing_ambient</option>
+                <option value="minecraft:oozing_emitter">minecraft:oozing_emitter</option>
+                <option value="minecraft:pale_oak_leaves_particle">minecraft:pale_oak_leaves_particle</option>
+                <option value="minecraft:phantom_trail_particle">minecraft:phantom_trail_particle</option>
+                <option value="minecraft:portal_directional">minecraft:portal_directional</option>
+                <option value="minecraft:portal_east_west">minecraft:portal_east_west</option>
+                <option value="minecraft:portal_north_south">minecraft:portal_north_south</option>
+                <option value="minecraft:portal_reverse_particle">minecraft:portal_reverse_particle</option>
+                <option value="minecraft:raid_omen_ambient">minecraft:raid_omen_ambient</option>
+                <option value="minecraft:raid_omen_emitter">minecraft:raid_omen_emitter</option>
+                <option value="minecraft:rain_splash_particle">minecraft:rain_splash_particle</option>
+                <option value="minecraft:redstone_ore_dust_particle">minecraft:redstone_ore_dust_particle</option>
+                <option value="minecraft:redstone_repeater_dust_particle">minecraft:redstone_repeater_dust_particle</option>
+                <option value="minecraft:redstone_torch_dust_particle">minecraft:redstone_torch_dust_particle</option>
+                <option value="minecraft:redstone_wire_dust_particle">minecraft:redstone_wire_dust_particle</option>
+                <option value="minecraft:rising_border_dust_particle">minecraft:rising_border_dust_particle</option>
+                <option value="minecraft:sculk_charge_particle">minecraft:sculk_charge_particle</option>
+                <option value="minecraft:sculk_charge_pop_particle">minecraft:sculk_charge_pop_particle</option>
+                <option value="minecraft:sculk_sensor_redstone_particle">minecraft:sculk_sensor_redstone_particle</option>
+                <option value="minecraft:sculk_soul_particle">minecraft:sculk_soul_particle</option>
+                <option value="minecraft:shriek_particle">minecraft:shriek_particle</option>
+                <option value="minecraft:shulker_bullet">minecraft:shulker_bullet</option>
+                <option value="minecraft:silverfish_grief_emitter">minecraft:silverfish_grief_emitter</option>
+                <option value="minecraft:small_flame_particle">minecraft:small_flame_particle</option>
+                <option value="minecraft:small_soul_fire_flame">minecraft:small_soul_fire_flame</option>
+                <option value="minecraft:smash_ground_particle">minecraft:smash_ground_particle</option>
+                <option value="minecraft:smash_ground_particle_center">minecraft:smash_ground_particle_center</option>
+                <option value="minecraft:sneeze">minecraft:sneeze</option>
+                <option value="minecraft:snowflake_particle">minecraft:snowflake_particle</option>
+                <option value="minecraft:sonic_explosion">minecraft:sonic_explosion</option>
+                <option value="minecraft:soul_particle">minecraft:soul_particle</option>
+                <option value="minecraft:sparkler_emitter">minecraft:sparkler_emitter</option>
+                <option value="minecraft:splash_spell_emitter">minecraft:splash_spell_emitter</option>
+                <option value="minecraft:sponge_absorb_water_particle">minecraft:sponge_absorb_water_particle</option>
+                <option value="minecraft:spore_blossom_ambient_particle">minecraft:spore_blossom_ambient_particle</option>
+                <option value="minecraft:spore_blossom_shower_particle">minecraft:spore_blossom_shower_particle</option>
+                <option value="minecraft:squid_flee_particle">minecraft:squid_flee_particle</option>
+                <option value="minecraft:squid_ink_bubble">minecraft:squid_ink_bubble</option>
+                <option value="minecraft:squid_move_particle">minecraft:squid_move_particle</option>
+                <option value="minecraft:stalactite_lava_drip_particle">minecraft:stalactite_lava_drip_particle</option>
+                <option value="minecraft:stalactite_water_drip_particle">minecraft:stalactite_water_drip_particle</option>
+                <option value="minecraft:stunned_emitter">minecraft:stunned_emitter</option>
+                <option value="minecraft:totem_manual">minecraft:totem_manual</option>
+                <option value="minecraft:totem_particle">minecraft:totem_particle</option>
+                <option value="minecraft:trial_omen_ambient">minecraft:trial_omen_ambient</option>
+                <option value="minecraft:trial_omen_emitter">minecraft:trial_omen_emitter</option>
+                <option value="minecraft:trial_omen_single">minecraft:trial_omen_single</option>
+                <option value="minecraft:trial_spawner_detection">minecraft:trial_spawner_detection</option>
+                <option value="minecraft:trial_spawner_detection_ominous">minecraft:trial_spawner_detection_ominous</option>
+                <option value="minecraft:underwater_torch_particle">minecraft:underwater_torch_particle</option>
+                <option value="minecraft:vault_connection_particle">minecraft:vault_connection_particle</option>
+                <option value="minecraft:vibration_signal">minecraft:vibration_signal</option>
+                <option value="minecraft:villager_angry">minecraft:villager_angry</option>
+                <option value="minecraft:villager_happy">minecraft:villager_happy</option>
+                <option value="minecraft:warden_dig">minecraft:warden_dig</option>
+                <option value="minecraft:water_drip_particle">minecraft:water_drip_particle</option>
+                <option value="minecraft:water_evaporation_actor_emitter">minecraft:water_evaporation_actor_emitter</option>
+                <option value="minecraft:water_evaporation_bucket_emitter">minecraft:water_evaporation_bucket_emitter</option>
+                <option value="minecraft:water_evaporation_manual">minecraft:water_evaporation_manual</option>
+                <option value="minecraft:water_splash_particle">minecraft:water_splash_particle</option>
+                <option value="minecraft:water_splash_particle_manual">minecraft:water_splash_particle_manual</option>
+                <option value="minecraft:water_wake_particle">minecraft:water_wake_particle</option>
+                <option value="minecraft:wax_particle">minecraft:wax_particle</option>
+                <option value="minecraft:weaving_ambient">minecraft:weaving_ambient</option>
+                <option value="minecraft:weaving_emitter">minecraft:weaving_emitter</option>
+                <option value="minecraft:white_smoke_particle">minecraft:white_smoke_particle</option>
+                <option value="minecraft:wind_charged_ambient">minecraft:wind_charged_ambient</option>
+                <option value="minecraft:wind_charged_emitter">minecraft:wind_charged_emitter</option>
+                <option value="minecraft:wind_explosion_emitter">minecraft:wind_explosion_emitter</option>
+                <option value="minecraft:witchspell_emitter">minecraft:witchspell_emitter</option>
+                <option value="minecraft:wither_boss_invulnerable">minecraft:wither_boss_invulnerable</option>
+            </select>
+        </div>
+
+        <label>Final Command:</label>
         <div id="output" class="output-box"></div>
 
         <div style="display: flex; align-items: center;">
             <button class="copy-btn" onclick="copyToClipboard()">Copy</button>
-            <span id="copy-status">Copied!</span>
+            <span id="copy-status">Copied to clipboard!</span>
         </div>
     </div>
 
     <script>
         const inputA = document.getElementById('inputA');
+        const particleSelect = document.getElementById('particleSelect');
         const output = document.getElementById('output');
         const copyStatus = document.getElementById('copy-status');
 
-        const baseTemplate = "execute as @a at @s rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/64 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/32 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/16 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/8 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/4 rotated as @r[tag=rdm,type=armor_stand] positioned ^a/64^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/32^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/16^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/8^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/4^^ rotated as @r[tag=rdm,type=boat] positioned ^^^a/64 rotated as @r[tag=rdm,type=boat] positioned ^^^a/32 rotated as @r[tag=rdm,type=boat] positioned ^^^a/16 rotated as @r[tag=rdm,type=boat] positioned ^^^a/8 rotated as @r[tag=rdm,type=boat] positioned ^^^a/4 if entity @s[r=a/2] run";
+        const baseTemplate = "execute as @a at @s rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/64 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/32 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/16 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/8 rotated as @e[tag=rdm,type=armor_stand] positioned ^^^a/4 rotated as @r[tag=rdm,type=armor_stand] positioned ^a/64^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/32^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/16^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/8^^ rotated as @r[tag=rdm,type=armor_stand] positioned ^a/4^^ rotated as @r[tag=rdm,type=boat] positioned ^^^a/64 rotated as @r[tag=rdm,type=boat] positioned ^^^a/32 rotated as @r[tag=rdm,type=boat] positioned ^^^a/16 rotated as @r[tag=rdm,type=boat] positioned ^^^a/8 rotated as @r[tag=rdm,type=boat] positioned ^^^a/4 if entity @s[r=a/2] ";
 
         function updateCommand() {
-            const aValue = parseFloat(inputA.value);
+            const aValueStr = inputA.value;
+            const aValue = parseFloat(aValueStr);
+            const particle = particleSelect.value;
             
             if (isNaN(aValue)) {
-                output.innerText = "Please enter a valid number";
+                output.innerText = "Enter a valid diameter";
                 return;
             }
 
@@ -108,6 +306,12 @@
 
             result = result.replace(/a\/2/g, (aValue / 2).toString());
             
+            if (particle === "") {
+                result += "run [your command here]";
+            } else {
+                result += "run particle " + particle ;
+            }
+
             output.innerText = result;
         }
 
@@ -128,9 +332,9 @@
         }
 
         inputA.addEventListener('input', updateCommand);
+        particleSelect.addEventListener('change', updateCommand);
         window.onload = updateCommand;
     </script>
 </body>
 </html>
 
-  
