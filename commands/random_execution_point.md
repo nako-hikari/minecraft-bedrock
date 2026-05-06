@@ -23,7 +23,7 @@ basically scattering something like a particle in an area around entity
 ```
 
 
-### then go here : [rnd command value autofill]https://nako-hikari.github.io/minecraft-bedrock/tools/rnd_command_autofill.html)
+### then go here : [rnd command value autofill](https://nako-hikari.github.io/minecraft-bedrock/tools/rnd_command_autofill.html)
 
 go to the page and insert your diameter value on the top box
 pick a particle, or you can leave it empty if you want to use your own command
