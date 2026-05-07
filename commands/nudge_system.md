@@ -33,11 +33,6 @@
 
 🟩 Chain : Unconditional : Always Active
 ```
-/execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4}] run kill @e[type=snowball]
-``` 
-
-🟩 Chain : Unconditional : Always Active
-```
 /execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4}] unless entity @e[name=nudge] run scoreboard players add @s nudge 1
 ``` 
 
@@ -78,7 +73,7 @@
 
 🟩 Chain : Unconditional : Always Active
 ```
-/execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4},scores={nudge=0}] at @s anchored eyes if entity @e[type=snowball,r=2] as @e[type=xp_orb,tag=!ex1] at @s rotated as @p positioned ^^^0.25 run clone ~~~ ~100~ 000 replace move
+/execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4},scores={nudge=0}] at @s anchored eyes if entity @e[type=snowball,r=2] as @e[type=xp_orb,tag=!ex1] at @s rotated as @p positioned ^^^0.25 run clone ~~~ ~~100~ 0 0 0 replace move
 ``` 
 
 🟩 Chain : Conditional : Always Active
@@ -88,7 +83,7 @@
 
 🟩 Chain : Unconditional : Always Active
 ```
-/execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4},scores={nudge=1}] at @s anchored eyes if entity @e[type=snowball,r=2] as @e[type=xp_orb,tag=!ex1] at @s positioned ^^^0.25 if block ~~-1~ air run clone ~~~ ~100~ 000 replace move
+/execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4},scores={nudge=1}] at @s anchored eyes if entity @e[type=snowball,r=2] as @e[type=xp_orb,tag=!ex1] at @s positioned ^^^0.25 if block ~~-1~ air run clone ~~~ ~~100~ 0 0 0 replace move
 ``` 
 
 🟩 Chain : Conditional : Always Active
@@ -100,3 +95,8 @@
 ```
 /execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4},scores={nudge=2}] at @s anchored eyes if entity @e[type=snowball,r=2] as @e[type=xp_orb,tag=!ex1] at @s rotated as @p positioned ^^^0.25 if block ~~1~ air run clone ~~~ ~~~ ~~1~
 ```
+
+🟩 Chain : Unconditional : Always Active
+```
+/execute as @a[hasitem={item=snowball,location=slot.weapon.mainhand,data=4}] run kill @e[type=snowball]
+``` 
