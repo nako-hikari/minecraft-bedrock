@@ -1,6 +1,7 @@
 # Nudge System
 
-## Teleporting a command block tower either up 1 block, down 1 block, or copy above if there's air
+## Teleporting a command block tower either up 1 block, down 1 block, or copy current block into above if there's air
+### using xp orb raycast system to detect where you look
 
 
 ### Setup
