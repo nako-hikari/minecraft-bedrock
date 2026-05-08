@@ -1,0 +1,25 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "usefull stick",
+    "description": "nudge wand system 1.0.9",
+    "uuid": "d214e9d9-0571-2b89-b82d-607d0297489f",
+    "version": [1, 0, 9],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "3b8171f4-fad4-6945-20a4-f5ba3c6ad46b",
+      "version": [1, 0, 9],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.11.0"
+    }
+  ]
+}
