@@ -4,92 +4,26 @@
 ### using xp orb raycast system to detect where you look
 
 ### visualization 
-<div style="max-width: 35%; margin: 0 auto; display: flex; flex-direction: column; align-items: center; font-family: monospace;">
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">17.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">16.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">15.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">14.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">13.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">12.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">11.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">10.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">9.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">8.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">7.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">6.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">5.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">4.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">3.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">2.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
-  <div style="display: flex; align-items: center; justify-content: flex-end; width: 100%; height: 50px; line-height: 0;">
-    <span style="color: #5a5a66; font-weight: bold; font-size: 14px; margin-right: 12px; white-space: nowrap;">1.</span>
-    <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/repeat.png" width="50" height="50" style="display: block; margin: 0; padding: 0; border: none; object-fit: contain;">
-    <div style="flex-grow: 1;"></div>
-  </div>
+<div style="max-width: 35%; margin: 0 auto;">
+
+17. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+16. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+15. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+14. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50"><br>
+13. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+12. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50"><br>
+11. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+10. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+9. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+8. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+7. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+6. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+5. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+4. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+3. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+2. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
+1. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/repeat.png" width="50"><br>
+
 </div>
 
 ### Setup
