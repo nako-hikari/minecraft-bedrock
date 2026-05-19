@@ -4,25 +4,76 @@
 ### using xp orb raycast system to detect where you look
 
 ### visualization 
-<div align="left">
-
-17\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-16\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-15\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-14\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50"><br>
-13\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-12\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50"><br>
-11\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-10\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-9\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-8\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-7\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-6\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-5\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-4\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-3\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-2\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"><br>
-1\. <img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/repeat.png" width="50"><br>
+<table style="max-width: 35%; margin: 0 auto; border-collapse: collapse; border: none; font-family: monospace;">
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">17.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">16.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">15.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">14.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">13.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">12.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">11.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">10.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">9.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">8.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">7.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">6.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">5.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">4.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">3.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">2.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+  <tr>
+    <td style="padding: 0 var(--space-md) 0 0; text-align: right; vertical-align: middle; border: none; color: #5a5a66; font-weight: bold; font-size: 14px;">1.</td>
+    <td style="padding: 0; line-height: 0; border: none;"><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/repeat.png" width="50" style="display: block; margin: 0; padding: 0;"></td>
+  </tr>
+</table>
 
 </div>
 
