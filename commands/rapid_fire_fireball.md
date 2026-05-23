@@ -3,8 +3,8 @@
 ## setup visualization 
 <div style="max-width: 35%; margin: 0 auto;">
 <ol reversed start="3">
-  <li><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"></li>
-  <li><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain.png" width="50"></li>
+  <li><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50"></li>
+  <li><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/chain-conditional.png" width="50"></li>
   <li><img src="https://raw.githubusercontent.com/nako-hikari/support-files/main/assets/minecraft/repeat.png" width="50"></li>
 </ol>
 </div>
