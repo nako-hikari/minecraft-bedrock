@@ -1,7 +1,0 @@
-credit : Gug7g7
-
-TITLE: Ttgug
-TAG: random
-
-CMD:C:AA:U:0
-7
