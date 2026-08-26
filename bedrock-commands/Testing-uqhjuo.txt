@@ -1,0 +1,32 @@
+credit : ZeLuckyMC pengupas bawang
+
+TITLE: Testing
+DESC: Tolong hapus min soalnya ga bisa dihapus ;)
+TAG: random
+
+H2: H2 test
+
+CMD:NPC
+Textt {"text":"?"}
+
+H3: H3 Test
+
+TAG: flip
+CMD:CHAT
+Test chat
+
+H4: H4 Test
+
+TAG: flip
+CMD:C:NR:U:20
+exe...
+CMD:NPC
+Pew
+
+TAG: flip
+CMD:CHAT
+Erp
+
+TEXT: Bodytext
+
+NOTE: Note note
