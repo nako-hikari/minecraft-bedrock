@@ -1,0 +1,55 @@
+credit : NaCryst
+
+TITLE: Xp Star Thingy
+DESC: Squeeze em
+TAG: visual
+
+H2: First do this setup ▼
+
+CMD:NPC
+/kill @e[type=xp_orb]
+/summon xp_orb ~~3~
+/summon xp_orb ~~3~
+/summon xp_orb ~~3~
+/summon xp_orb ~~3~
+/summon xp_orb ~~3~
+/summon xp_orb ~~3~
+/summon xp_orb ~~3~
+/tp @e[type=xp_orb, c=7] ~~3.5~
+/tag @e[type=xp_orb,tag=!xp_orb1,c=1] add xp_orb1
+/tag @e[type=xp_orb,tag=!xp_orb1,tag=!xp_orb2,c=1] add xp_orb2
+/tag @e[type=xp_orb,tag=!xp_orb1,tag=!xp_orb2,tag=!xp_orb3,c=1] add xp_orb3
+/tag @e[type=xp_orb,tag=!xp_orb1,tag=!xp_orb2,tag=!xp_orb3,tag=!xp_orb4,c=1] add xp_orb4
+/tag @e[type=xp_orb,tag=!xp_orb1,tag=!xp_orb2,tag=!xp_orb3,tag=!xp_orb4,tag=!xp_orb5,c=1] add xp_orb5
+/tag @e[type=xp_orb,tag=!xp_orb1,tag=!xp_orb2,tag=!xp_orb3,tag=!xp_orb4,tag=!xp_orb5,tag=!xp_orb6,c=1] add xp_orb6
+/tag @e[type=xp_orb,tag=!xp_orb1,tag=!xp_orb2,tag=!xp_orb3,tag=!xp_orb4,tag=!xp_orb5,tag=!xp_orb6,tag=!xp_orb7,c=1] add xp_orb7
+/structure save xp_orbs ~ ~3 ~ ~ ~3 ~ true disk false
+/setblock ~ ~ ~ repeating_command_block["facing_direction"=1]
+/fill ~ ~1 ~ ~ ~10 ~ chain_command_block["facing_direction"=1]
+/kill @s
+
+H2: Now do all this
+
+CMD:R:AA:U:0
+/execute as @e[type=xp_orb] at @s run tp ~~0.04~
+CMD:C:AA:U:0
+/playanimation @e[type=xp_orb] animation.player.attack.positions x 0 "v.scale=2;" setValue
+CMD:C:AA:U:0
+/playanimation @e[tag=xp_orb1, tag=!exxp] animation.creeper.swelling none 0 "v.swelling_scale1 = 1 * v.scale;v.swelling_scale2 = 1 * v.scale;" Nako:Xp_Stretch
+CMD:C:AA:U:0
+/playanimation @e[tag=xp_orb2, tag=!exxp] animation.creeper.swelling none 0 "v.swelling_scale1 = 0.5 * v.scale;v.swelling_scale2 = 1.8 * v.scale;" Nako:Xp_Stretch
+CMD:C:AA:U:0
+/playanimation @e[tag=xp_orb3, tag=!exxp] animation.creeper.swelling none 0 "v.swelling_scale1 = 1.8 * v.scale;v.swelling_scale2 = 0.5 * v.scale;" Nako:Xp_Stretch
+CMD:C:AA:U:0
+/playanimation @e[tag=xp_orb4, tag=!exxp] animation.creeper.swelling none 0 "v.swelling_scale1 = 4 * v.scale;v.swelling_scale2 = 0.2 * v.scale;" Nako:Xp_Stretch
+CMD:C:AA:U:0
+/playanimation @e[tag=xp_orb5, tag=!exxp] animation.creeper.swelling none 0 "v.swelling_scale1 = 6 * v.scale;v.swelling_scale2 = 0.07 * v.scale;" Nako:Xp_Stretch
+CMD:C:AA:U:0
+/playanimation @e[tag=xp_orb6, tag=!exxp] animation.creeper.swelling none 0 "v.swelling_scale1 = 0.25 * v.scale;v.swelling_scale2 = 4 * v.scale;" Nako:Xp_Stretch
+CMD:C:AA:U:0
+/playanimation @e[tag=xp_orb7, tag=!exxp] animation.creeper.swelling none 0 "v.swelling_scale1 = 0.07 * v.scale;v.swelling_scale2 = 6 * v.scale;" Nako:Xp_Stretch
+
+TEXT: To spawn it just do ▼
+
+CMD:I:NR:U:0
+Structure load xp_orbs ~~~
