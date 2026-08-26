@@ -1,0 +1,6 @@
+{
+  "id": "mt9rt8lm-w1rftz",
+  "author": "Alvar Craft",
+  "content": "credit : Alvar Craft\n\nTITLE: Despawn and Respawn Detections\nTAG: functional,technique\n\nCMD:CHAT\n/give @p command_block\nCMD:CHAT\n/gamerule commandblockoutput false\nCMD:CHAT\n/gamerule sendcommandfeedback false\n\nCMD:R:AA:U:0\n/tag @a add dead\nCMD:C:AA:U:0\n/tag @e[type=player] remove dead\nCMD:C:AA:U:0\n/execute as @a[tag=dead,tag=!respawn] at @s run <despawn_output>\nCMD:C:AA:U:0\n/tag @a[tag=dead,tag=!respawn] add respawn\nCMD:C:AA:U:0\n/execute as @a[tag=dead,tag=respawn] at @s run <respawn_output>\nCMD:C:AA:U:0\n/tag @e[family=player,tag=!dead] remove respawn",
+  "submittedAt": "2026-08-26T07:26:47.242Z"
+}
