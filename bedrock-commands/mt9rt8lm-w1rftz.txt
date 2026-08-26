@@ -1,0 +1,24 @@
+credit : Alvar Craft
+
+TITLE: Despawn and Respawn Detections
+TAG: functional,technique
+
+CMD:CHAT
+/give @p command_block
+CMD:CHAT
+/gamerule commandblockoutput false
+CMD:CHAT
+/gamerule sendcommandfeedback false
+
+CMD:R:AA:U:0
+/tag @a add dead
+CMD:C:AA:U:0
+/tag @e[type=player] remove dead
+CMD:C:AA:U:0
+/execute as @a[tag=dead,tag=!respawn] at @s run <despawn_output>
+CMD:C:AA:U:0
+/tag @a[tag=dead,tag=!respawn] add respawn
+CMD:C:AA:U:0
+/execute as @a[tag=dead,tag=respawn] at @s run <respawn_output>
+CMD:C:AA:U:0
+/tag @e[family=player,tag=!dead] remove respawn
