@@ -1,0 +1,30 @@
+credit : Nako Hikari
+
+TITLE: Preview 2
+TAG: random
+
+CMD:R:AA:U:0
+
+CMD:C:AA:C:30
+
+CMD:I:NR:U:0
+
+TAG: flip
+CMD:R:AA:U:0
+With flip tag
+CMD:C:AA:U:0
+
+CMD:C:AA:U:0
+
+CMD:C:AA:U:0
+
+CMD:C:AA:U:0
+
+CMD:NPC
+Npc
+Allow 
+Multiple
+Line
+
+CMD:NPC
+Chat
