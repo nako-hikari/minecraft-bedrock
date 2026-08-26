@@ -1,6 +1,0 @@
-{
-  "id": "mta3edbc-uqhjuo",
-  "author": "ZeLuckyMC pengupas bawang",
-  "content": "credit : ZeLuckyMC pengupas bawang\n\nTITLE: Testing\nDESC: Tolong hapus min soalnya ga bisa dihapus ;)\nTAG: random\n\nH2: H2 test\n\nCMD:NPC\nTextt {\"text\":\"?\"}\n\nH3: H3 Test\n\nTAG: flip\nCMD:CHAT\nTest chat\n\nH4: H4 Test\n\nTAG: flip\nCMD:C:NR:U:20\nexe...\nCMD:NPC\nPew\n\nTAG: flip\nCMD:CHAT\nErp\n\nTEXT: Bodytext\n\nNOTE: Note note",
-  "submittedAt": "2026-08-26T12:51:08.904Z"
-}
