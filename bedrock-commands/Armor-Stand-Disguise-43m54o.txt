@@ -14,6 +14,7 @@ CMD:CHAT
 /tag @s add control.tp
 CMD:CHAT
 /playanimation @s animation.minecart.move.v1.0 n 0 "v.rail_offset.x=math.sqrt(-1);t.sneak=q.is_sneaking;t.attack=v.attack_time;t.body=q.body_y_rotation;t.head=q.bone_orientation_trs('head');" control
+
 NOTE: .
 CMD:R:AA:U:0
 execute as @n[type=armor_stand,tag=mx] at @p[tag=control.tp] run tp ~~~~~
