@@ -1,0 +1,6 @@
+{
+  "id": "mtas0tig-3qv7f6",
+  "author": "Alvar Craft",
+  "content": "credit : Alvar Craft\n\nTITLE: Custom Boss Bar\nTAG: random,technique\n\nCMD:CHAT\n/gamerule commandblockoutput false\nCMD:CHAT\n/gamerule sendcommandfeedback false\nCMD:CHAT\n/give @p command_block\nCMD:R:AA:U:0\n/execute as @e[tag=boss] unless entity @s[hasitem={item=netherite_helmet,data=408}] run replaceitem entity @s slot.armor.helmet 0 netherite_helmet 1 408\nCMD:C:AA:C:0\n/execute at @e[tag=boss] as @e[tag=bossbar] run damage @s 10 entity_attack entity @p\nCMD:C:AA:C:0\n/execute at @e[tag=boss] run particle minecraft:lava_particle ~~0.5~\n\nCMD:R:AA:U:0\n/execute as @e[type=wither] at @s run tp ~~~~~\nCMD:CHAT\n/summon wither \"§d Custom Bossbar Name §f\"\nCMD:CHAT\n/summon wither_skeleton \"§d Boss Name §f\"\n\nCMD:I:NR:U:0\n/tag @n[type=wither] add bossbar\nCMD:I:NR:U:0\ntag @n[type=wither_skeleton] add boss",
+  "submittedAt": "2026-08-27T00:20:27.112Z"
+}
