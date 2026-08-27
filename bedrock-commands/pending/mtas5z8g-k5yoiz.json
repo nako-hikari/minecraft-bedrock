@@ -1,6 +1,0 @@
-{
-  "id": "mtas5z8g-k5yoiz",
-  "author": "AlvarNET",
-  "content": "credit : AlvarNET\n\nTITLE: Snipping Feature\nDESC: Jongkok untuk mengaktifkan fitur auto-tengah.\nTAG: functional,technique\n\nCMD:R:AA:U:0\n/execute as @a at @s unless entity @s[y=~1.5,dy=0.6] if entity @s[y=~1.2,dy=0.4] align xz positioned ~0.5 ~ ~0.5 unless entity @s[r=0.0015] run tp ~ ~ ~ ~ ~ true\nCMD:C:AA:U:0\n/execute as @a[haspermission={lateral_movement=enabled}] at @s unless entity @s[y=~1.5,dy=0.6] if entity @s[y=~1.2,dy=0.4] run inputpermission set @s lateral_movement disabled\nCMD:C:AA:U:0\n/execute as @a[haspermission={lateral_movement=disabled}] at @s if entity @s[y=~1.52,dy=0] if entity @s[y=~1.25,dy=0] run inputpermission set @s lateral_movement enabled",
-  "submittedAt": "2026-08-27T00:24:27.808Z"
-}
