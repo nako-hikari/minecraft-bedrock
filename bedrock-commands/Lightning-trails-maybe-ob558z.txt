@@ -1,0 +1,47 @@
+credit : Nako Hikari
+
+TITLE: Lightning trails maybe
+DESC: Your feet will emit lightning
+TAG: particle,random,visual
+
+H2: Setup
+
+TEXT: Add new scoreboard objectives
+
+CMD:CHAT
+/scoreboard objectives add time dummy
+
+TEXT: Setting up entities
+
+CMD:CHAT
+/summon boat ~~~ 0 90
+CMD:CHAT
+/summon boat ~~~ 180 -90
+CMD:CHAT
+/tag @e[type=boat, c=2] add r
+
+TEXT: After the setup is done
+Now we can go to the command blocks
+
+H2: Command Blocks
+
+CMD:R:AA:U:4
+execute as @a positioned 0 0 0 rotated as @r[type=boat, tag=r] positioned ^1^^ rotated as @r[type=boat, tag=r] rotated ~ 0 positioned ^^^1 rotated as @r[type=boat, tag=r] positioned ^1.414^^ facing 0 0 0 positioned 0 0 0 positioned ^^^1 rotated as @r[type=boat, tag=r] positioned ^1^^ facing 0 0 0 positioned 0 0 0 positioned ^^^1 rotated as @r[type=boat, tag=r] positioned ^1^^ facing 0 0 0  positioned as @s run summon armor_stand ~~100~ ~~ x el
+CMD:R:AA:U:0
+execute as @e[name=el]  positioned 0 0 0 rotated as @r[type=boat, tag=r] positioned ^1^^ rotated as @r[type=boat, tag=r] rotated ~ 0 positioned ^^^1 rotated as @r[type=boat, tag=r] positioned ^1.414^^ facing 0 0 0 positioned 0 0 0 positioned ^^^1 rotated as @r[type=boat, tag=r] positioned ^1^^ facing 0 0 0 positioned 0 0 0 positioned ^^^1 rotated as @r[type=boat, tag=r] positioned ^1^^ facing 0 0 0  positioned as @s positioned ^^^2 rotated as @s positioned ^^^-2.5 facing entity @s feet positioned as @s as @s run tp ^^^2 ~~
+CMD:C:AA:U:0
+execute as @e[name=el] at @s rotated as @e[tag=r] positioned ^^^0.5 rotated as @e[tag=r] positioned ^^^0.25 rotated as @e[tag=r] positioned ^^^0.125 rotated as @e[tag=r] positioned ^^^0.0625 rotated as @s rotated ~90 45 positioned ^^^15000 facing entity @s feet positioned ^^^30000 rotated as @s rotated ~90 45 positioned ^^^15000 rotated as @s positioned ^15000^^15000 facing entity @s feet positioned ^^^42426.40687119285 rotated as @s positioned ^15000^^25000 facing entity @s feet positioned ^^^10001 run particle minecraft:balloon_gas_particle ~~-99.8~
+CMD:C:AA:U:0
+scoreboard players add @e[name=el] time 1
+CMD:C:AA:U:0
+kill @e[name=el, scores={time=15}]
+
+TEXT: Now just put a lever on the first command block and activate it :D
+
+H2: Explanation :
+
+TEXT: 1. rotate the player execution point randomly with @r and the summon an armor stand at that direction, 100 blocks above the player
+2. Executing as armor stand "el" and use the same yaw randomization in cb 1 to pick a random direction and teleport forward 2 blocks and to that rotation "~~"
+3.  Executing as armor stand "el" then using execute nesting/forking to multiply the execution point which make a 2 blocks vertical line. Then use a coordinate manipulation techniques (idk what to call them.. okay?) to make the line just behind the armor stand (from current position to pervious position) and spawn a particle 99.8 block below
+4. Adding 1 score to the armor stand objective "time" each tick
+5. Killing armor stand after their "time" objective have score/value of 15 (0.75 second)
