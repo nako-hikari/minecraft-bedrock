@@ -1,0 +1,50 @@
+credit : AlvarNET
+
+TITLE: Health Limit Level
+DESC: Tiap mati maka jumlah hati akan berkurang 1, pulihkan 1 hati dengan mengorbankan 1 Totem. Jika kehabisan nyawa maka akan menjadi Spectator
+TAG: functional,random,technique
+
+CMD:CHAT
+/scoreboard objectives add heart dummy
+CMD:CHAT
+/gamerule naturalregeneration false
+CMD:CHAT
+/gamerule commandblockoutput false
+
+CMD:R:AA:U:60
+/execute as @a unless entity @s[hasitem={item=totem,quantity=0,location=slot.weapon.mainhand}] if entity @s[scores={heart=-18..-2}] run scoreboard players add @s heart 2
+CMD:C:AA:U:0
+/execute as @a unless entity @s[hasitem={item=totem,quantity=0,location=slot.weapon.mainhand}] run effect @s regeneration 3 1 true
+CMD:C:AA:U:0
+/execute as @a unless entity @s[hasitem={item=totem,quantity=0,location=slot.weapon.mainhand}] run playsound random.levelup @s
+CMD:C:AA:U:0
+/execute as @a unless entity @s[hasitem={item=totem,quantity=0,location=slot.weapon.mainhand}] run replaceitem entity @s slot.weapon.mainhand 0 air
+
+CMD:R:AA:U:0
+/tag @a add dead
+CMD:C:AA:U:0
+/tag @e[type=player] remove dead
+CMD:C:AA:U:0
+/tag @a[tag=dead,tag=!respawn] add respawn
+CMD:C:AA:U:0
+/execute as @a[tag=!dead,tag=respawn] unless entity @s[scores={heart=-18}] run scoreboard players add @s heart -2
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-2}] 2 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-4}] 4 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-6}] 6 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-8}] 8 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-10}] 10 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-12}] 12 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-14}] 14 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-16}] 16 void
+CMD:C:AA:U:0
+/damage @a[tag=!dead,tag=respawn,scores={heart=-18}] 18 void
+CMD:C:AA:U:0
+/tag @e[family=player,tag=!dead] remove respawn
