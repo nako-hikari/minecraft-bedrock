@@ -1,0 +1,29 @@
+credit : Alvar Craft
+
+TITLE: Custom Boss Bar
+TAG: random,technique
+
+CMD:CHAT
+/gamerule commandblockoutput false
+CMD:CHAT
+/gamerule sendcommandfeedback false
+CMD:CHAT
+/give @p command_block
+CMD:R:AA:U:0
+/execute as @e[tag=boss] unless entity @s[hasitem={item=netherite_helmet,data=408}] run replaceitem entity @s slot.armor.helmet 0 netherite_helmet 1 408
+CMD:C:AA:C:0
+/execute at @e[tag=boss] as @e[tag=bossbar] run damage @s 10 entity_attack entity @p
+CMD:C:AA:C:0
+/execute at @e[tag=boss] run particle minecraft:lava_particle ~~0.5~
+
+CMD:R:AA:U:0
+/execute as @e[type=wither] at @s run tp ~~~~~
+CMD:CHAT
+/summon wither "§d Custom Bossbar Name §f"
+CMD:CHAT
+/summon wither_skeleton "§d Boss Name §f"
+
+CMD:I:NR:U:0
+/tag @n[type=wither] add bossbar
+CMD:I:NR:U:0
+tag @n[type=wither_skeleton] add boss
