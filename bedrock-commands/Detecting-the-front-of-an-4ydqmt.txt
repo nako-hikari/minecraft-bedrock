@@ -1,0 +1,27 @@
+credit : Nako Hikari
+
+TITLE: Detecting the front of an arrwo
+DESC: Arrow front
+TAG: technique
+
+H1: Knowing where the front
+
+TEXT: The front of an arrow (visually) doesn't match it's true rotation
+But, with this command you will finally be able to detect it easily
+
+H2: Command
+
+CMD:R:AA:U:0
+/execute as @e[type=arrow] at @s positioned 0 0 0 positioned ^^^5 positioned ~ ~ 0 positioned ^^^-2.5 facing 0 0 0 positioned as @s run <your command>
+
+TEXT: That command make it so the rotation of an arrow match it's visual and trajectory
+
+H2: Examples :
+
+H3: Exploding arrow
+
+CMD:R:AA:U:0
+/execute as @e[type=arrow] at @s positioned 0 0 0 positioned ^^^5 positioned ~ ~ 0 positioned ^^^-2.5 facing 0 0 0 positioned as @s unless block ^^^0.01 air run summon ender_crystal ~~~ ~~ minecraft:crystal_explode
+
+NOTE:YELLOW: Downside of this command is the arrow will explode upon detecting any kind of non full block
+Like vine, cobweb etc.
