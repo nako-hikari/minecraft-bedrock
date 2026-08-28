@@ -1,6 +1,0 @@
-{
-  "id": "mtcarfy5-8pu1qk",
-  "author": "AlvarLOL",
-  "content": "credit : AlvarLOL\n\nTITLE: Minecart Terbang\nDESC: Kereta tambang yang bisa dinaiki bebas, terbang, dan menyelam. Pegang \"Trial Key\" untuk mengaktifkan!\nTAG: functional\n\nCMD:R:AA:U:0\n/execute as @a[hasitem={item=trial_key,location=slot.weapon.mainhand}] at @s unless entity @n[type=minecart,r=3] run ride @s summon_ride minecart reassign_rides\nCMD:C:AA:U:0\n/execute as @a[hasitem={item=trial_key,location=slot.weapon.mainhand}] at @s if entity @n[type=minecart,r=3] run ride @s start_riding @n[type=minecart] teleport_rider until_full\nCMD:C:AA:U:0\n/execute at @e[type @a[hasitem={item=trial_key,location=slot.weapon.mainhand}] as @n[type=minecart,r=3] at @s rotated as @p run tp ^^^0.15 true\nCMD:C:AA:U:0\n/execute as @a[hasitem={item=trial_key,location=slot.weapon.mainhand,quantity=0}] at @s if entity @n[type=minecart,r=3] run ride @s stop_riding",
-  "submittedAt": "2026-08-28T01:52:48.509Z"
-}
