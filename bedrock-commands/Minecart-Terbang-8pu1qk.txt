@@ -1,0 +1,14 @@
+credit : AlvarLOL
+
+TITLE: Minecart Terbang
+DESC: Kereta tambang yang bisa dinaiki bebas, terbang, dan menyelam. Pegang "Trial Key" untuk mengaktifkan!
+TAG: functional
+
+CMD:R:AA:U:0
+/execute as @a[hasitem={item=trial_key,location=slot.weapon.mainhand}] at @s unless entity @n[type=minecart,r=3] run ride @s summon_ride minecart reassign_rides
+CMD:C:AA:U:0
+/execute as @a[hasitem={item=trial_key,location=slot.weapon.mainhand}] at @s if entity @n[type=minecart,r=3] run ride @s start_riding @n[type=minecart] teleport_rider until_full
+CMD:C:AA:U:0
+/execute at @e[type @a[hasitem={item=trial_key,location=slot.weapon.mainhand}] as @n[type=minecart,r=3] at @s rotated as @p run tp ^^^0.15 true
+CMD:C:AA:U:0
+/execute as @a[hasitem={item=trial_key,location=slot.weapon.mainhand,quantity=0}] at @s if entity @n[type=minecart,r=3] run ride @s stop_riding
