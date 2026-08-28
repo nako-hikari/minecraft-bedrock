@@ -1,0 +1,6 @@
+{
+  "id": "mtcau2j4-need2b",
+  "author": "???",
+  "content": "credit : ???\n\nTITLE: Raycast System\nTAG: technique\n\nCMD:R:AA:U:0\n/tag @e[type=xp_orb] add B4\nCMD:C:AA:U:0\n/execute as @a at @s anchored eyes run summon xp_orb ~ ~0.1 ~ ~ ~\nCMD:C:AA:U:0\n/execute as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[type=xp_orb,tag=!b4] at @s run tp @s ^^^0.1 true\nCMD:C:AA:U:0\n/execute at @e[type=xp_orb,tag=!b4] run particle minecraft:endrod ~~~\nCMD:C:AA:U:0\n/kill @e[type=xp_orb,tag=!b4]",
+  "submittedAt": "2026-08-28T01:54:51.088Z"
+}
