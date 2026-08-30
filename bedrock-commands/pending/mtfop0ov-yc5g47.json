@@ -1,0 +1,6 @@
+{
+  "id": "mtfop0ov-yc5g47",
+  "author": "Nako Hikari",
+  "content": "credit : Nako Hikari\n\nTITLE: Player joined the game message\nTAG: fun,text-score\n\nH1: You only need 1 command\n\nCMD:CHAT\n/titleraw @a {\"rawtext\":[{\"title\":\"§eHerobrine joined the game§r\"}]}\n\nNOTE:GREEN: Change \"Herobrine\" with whatever you want",
+  "submittedAt": "2026-08-30T10:46:08.575Z"
+}
