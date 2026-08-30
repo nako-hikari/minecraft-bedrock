@@ -1,15 +1,25 @@
 credit : ???
 
 TITLE: Raycast System
+DESC: Place a point on a surface where the player look
 TAG: technique
+
+H1: Commands
 
 CMD:R:AA:U:0
 /tag @e[type=xp_orb] add B4
 CMD:C:AA:U:0
 /execute as @a at @s anchored eyes run summon xp_orb ~ ~0.1 ~ ~ ~
 CMD:C:AA:U:0
-/execute as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[type=xp_orb,tag=!b4] at @s run tp @s ^^^0.1 true
+/execute as @e[type=xp_orb,tag=!b4] at @s as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @e[c=2] as @n run tp @s ^^^0.1 true
 CMD:C:AA:U:0
 /execute at @e[type=xp_orb,tag=!b4] run particle minecraft:endrod ~~~
 CMD:C:AA:U:0
 /kill @e[type=xp_orb,tag=!b4]
+
+H2: Explanation
+
+BULLET:num
+Tagging every xp with b4
+Executing as player at itself, anchored on eyes and added y~0.1 (anchored eyes is exactly 1.52 from player root, player camera is on 1.62, that's why we add 0.1), and summon an xp orb rotating as the player
+My battery is ded so imma finish this later :/
