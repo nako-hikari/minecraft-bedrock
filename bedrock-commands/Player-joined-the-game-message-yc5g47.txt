@@ -1,0 +1,11 @@
+credit : Nako Hikari
+
+TITLE: Player joined the game message
+TAG: fun,text-score
+
+H1: You only need 1 command
+
+CMD:CHAT
+/titleraw @a {"rawtext":[{"title":"§eHerobrine joined the game§r"}]}
+
+NOTE:GREEN: Change "Herobrine" with whatever you want
