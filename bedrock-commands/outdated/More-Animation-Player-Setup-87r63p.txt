@@ -1,0 +1,60 @@
+credit : ZeLuckyMc
+
+TITLE: More+ Animation Player Setup (MAPS)
+DESC: A Molang-based setup designed to dynamically manipulate and control the rotation and position of specific bones within the player model.
+TAG: complex,visual
+
+H3: Command Block:
+
+CMD:R:AA:U:100
+playanimation @a animation.minecart.move.v1.0 xyz 0 "v.root.x=v.root.x??0;v.root.z=v.root.z??0;v.body.x=v.body.x??0;v.body.y=v.body.y??0;v.body.z=v.body.z??0;v.head.x=v.head.x??0;v.head.y=v.head.y??0;v.head.z=v.head.z??0;v.rightleg.x=v.rightleg.x??0;v.leftleg.x=v.leftleg.x??0;v.rightarm.x=v.rightarm.x??0;v.leftarm.x=v.leftarm.x??0;v.rightarm.y=v.rightarm.y??0;v.leftarm.y=v.leftarm.y??0;v.rightarm.z=v.rightarm.z??0;v.leftarm.z=v.leftarm.z??0;v.rail_offset.x=0.625;v.rail_offset.y=18.5/16-0.75*math.cos(v.body.x);v.rail_offset.z=-1.875+0.75*math.sin(v.body.x);" pivot_offset.body_x?pos.root_xz
+CMD:C:AA:U:0
+playanimation @a animation.parrot.dance xy 0 "v.dance.x=11.25*math.sin(v.body.z)+26.5*v.is_first_person;v.dance.y=11.25*(math.cos(v.body.z)-1)-2.5*v.is_first_person;" pivot_offset.body_z
+CMD:C:AA:U:0
+playanimation @a animation.wolf.shaking z 0 "v.body_rot_z=v.body.z+125*v.is_first_person;" zrot.body
+CMD:C:AA:U:0
+playanimation @a animation.ender_dragon.setup xz 0 "v.rotation_factor_translate=-1.8;v.clamped_pitch=180+v.root.x+v.body.x;v.clamped_roll=180-v.root.z;" xrot.body?xzrot.root
+CMD:C:AA:U:0
+playanimation @a animation.player.attack.rotations y 0 "v.attack_body_rot_y=v.body.y+25*v.is_first_person;" yrot.body
+CMD:C:AA:U:0
+playanimation @a animation.ender_dragon.neck_head_movement xyz 0 "v.head_rotation_x=q.target_x_rotation+v.head.x;v.head_rotation_y=q.target_y_rotation+v.head.y;v.head_rotation_z=11.25*(math.cos(v.body.z)-1)+v.head.z;" xyzrot.head
+CMD:C:AA:U:0
+playanimation @a animation.player.move.legs x 0 "v.tcos0=(v.rightleg.x-v.leftleg.x)/1.4/2;" xrot.leg_1
+CMD:C:AA:U:0
+playanimation @a animation.player.move.legs.single x 0 "v.tcos0=(v.leftleg.x+v.rightleg.x)/2-v.body.x;" xrot.leg_2
+CMD:C:AA:U:0
+playanimation @a animation.player.move.arms x 0 "v.tcos0=(-math.cos(q.life_time*20*10.89)*28.65+v.leftarm.x-v.rightarm.x)/2;" xrot.hand_1
+CMD:C:AA:U:0
+playanimation @a animation.player.move.arms.single x 0 "v.tcos0=(math.cos(q.life_time*20*10.89)*28.65-v.leftarm.x-v.rightarm.x)/2;" xrot.hand_2
+CMD:C:AA:U:0
+playanimation @a animation.player.first_person.map_hold_attack y 0 "v.map_angle=0;v.attack_time=0;v.short_arm_offset_right=-(math.sin(v.first_person_item_rotation_factor*(1-v.attack_time)*(1-v.attack_time)*200)*1.75)+v.rightarm.y;v.short_arm_offset_left=-(math.sin(v.first_person_item_rotation_factor*(1-v.attack_time)*(1-v.attack_time)*200)*3.75-v.first_person_item_rotation_factor*v.attack_time*1.25)+v.leftarm.y;" ypos.rightarm?leftarm
+CMD:C:AA:U:0
+playanimation @a animation.piglin.sword.attack z 0 "v.z_bob=math.cos(q.life_time*103.2)*2.865+2.865+v.rightarm.z-v.leftarm.z;" zrot.hand_1
+CMD:C:AA:U:0
+playanimation @a animation.agent.move z 0 "v.agent.easein=0;v.agent.movespeedscalar=0;v.agent.armxrotationfactor=-(((-0.2-1.5*(math.abs(math.mod(q.modified_distance_moved,13)-6.5)-3.25)/3.25)*q.modified_move_speed)*57.3);v.agent.ishovering=1;v.agent.legxrotationfactor=((1.5*(math.abs(math.mod(q.modified_distance_moved,13)-6.5)-3.25)/3.25)*q.modified_move_speed)*57.3;v.agent.armzrotation=v.leftarm.z;" zrot.hand_2
+
+H2: • Variables
+
+BULLET:dot
+v.root.x
+v.root.z
+v.body.x
+v.body.y
+v.body.z
+v.head.x
+v.head.y
+v.head.z
+v.rightleg.x
+v.rightleg.z
+v.leftleg.x
+v.leftleg.z
+v.rightarm.x
+v.rightarm.y (position)
+v.rightarm.z
+v.leftarm.x
+v.leftarm.y (position)
+v.leftarm.z
+
+[img](https://raw.githubusercontent.com/Azizanzz0/Image/01861e1c0cc7baf17cbd32e662a7f7672f86685c/Tak%20berjudul41_20260712113224.jpg)
+
+[link][Account TikTok](https://www.tiktok.com/@zeluckymc)
