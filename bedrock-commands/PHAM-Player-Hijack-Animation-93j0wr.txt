@@ -4,7 +4,7 @@ TITLE: PHAM (Player Hijack Animation Module)
 DESC: A Molang-based setup designed to dynamically manipulate and control the rotation and position of specific bones within the player model.
 TAG: complex,visual,playanimation
 
-H3: Command Block
+H1: Command Block
 
 CMD:R:AA:U:100
 playanimation @a animation.wolf.shaking z 0 "v.body_head.xzscale=v.body_head.xzscale??1;v.body_head.yscale=v.body_head.yscale??1;v.body.scale=v.body.scale??1;v.head.scale=v.head.scale??1;v.root.x=v.root.x??0;v.root.z=v.root.z??0;v.root.xpos=v.root.xpos??0;v.root.ypos=v.root.ypos??0;v.root.zpos=v.root.zpos??0;v.body.x=v.body.x??0;v.body.y=v.body.y??0;v.body.z=v.body.z??0;v.body.xpos=v.body.xpos??0;v.body.ypos=v.body.ypos??0;v.head.x=v.head.x??0;v.head.y=v.head.y??0;v.head.z=v.head.z??0;v.head.xpos=v.head.xpos??0;v.head.ypos=v.head.ypos??0;v.head.zpos=v.head.zpos??0;v.rightleg.x=v.rightleg.x??0;v.leftleg.x=v.leftleg.x??0;v.rightarm.x=v.rightarm.x??0;v.leftarm.x=v.leftarm.x??0;v.rightarm.y=v.rightarm.y??0;v.leftarm.y=v.leftarm.y??0;v.rightarm.z=v.rightarm.z??0;v.leftarm.z=v.leftarm.z??0;v.rightarm.ypos=v.rightarm.ypos??0;v.leftarm.ypos=v.leftarm.ypos??0;v.body_rot_z=v.body.z+45*v.is_first_person;" zrot.body
@@ -15,7 +15,7 @@ playanimation @a animation.creeper.swelling s 0 "v.swelling_scale1=v.body_head.x
 CMD:C:AA:U:0
 playanimation @a animation.minecart.move.v1.0 xyz 0 "v.rail_offset.x=v.root.xpos/16+0.625;v.rail_offset.y=(18.5+v.root.ypos)/16-0.75*math.cos(v.body.x);v.rail_offset.z=v.root.zpos/16+1.2*v.is_first_person-1.875+0.75*math.sin(v.body.x);" pivot_offset.body_x
 CMD:C:AA:U:0
-playanimation @a animation.parrot.dance xy 0 "v.dance.x=11.25*math.sin(v.body.z)+this+v.body.xpos+9*v.is_first_person;v.dance.y=11.25*(math.cos(v.body.z)-1)+(v.body_head.yscale+v.body.scale-1)*12+v.body.ypos+7*v.is_first_person;" pivot_offset.body_z
+playanimation @a animation.parrot.dance xy 0 "v.dance.x=11.25*math.sin(v.body.z)+this+v.body.xpos+9*v.is_first_person;v.dance.y=11.25*(math.cos(v.body.z)-1)+(v.body_head.yscale-1)*12+v.body.ypos+7*v.is_first_person;" pivot_offset.body_z
 CMD:C:AA:U:0
 playanimation @a animation.ender_dragon.setup xz 0 "v.rotation_factor_translate=-1.8;v.clamped_pitch=180+v.root.x+v.body.x;v.clamped_roll=180-v.root.z;" xrot.body?xzrot.root
 CMD:C:AA:U:0
@@ -39,7 +39,7 @@ NOTE:YELLOW: If you want to apply it to a zombie, insert controller.animation.zo
 
 NOTE:RED: The Archery, Throwing a trident / Wielding a trident, Thrusting a spear / Throwing a spear, Eating, Blowing a goat horn, and Looking through a spyglass / Using a spyglass animations cannot be played.
 
-H1: Variables
+H2: Variables
 
 BULLET:dot
 v.root.x
@@ -73,7 +73,7 @@ v.leftarm.y
 v.leftarm.z
 v.leftarm.ypos
 
-H2: Generating Stop Expression
+H1: Generating Stop Expression
 
 [img](https://raw.githubusercontent.com/Azizanzz0/Image/refs/heads/main/Tak%20berjudul55_20260907220502.jpg)
 
@@ -85,7 +85,7 @@ TEXT: Users can add specific body parts or bones to animate, such as the head, b
 
 TEXT: The 3D viewport offers two main viewing modes. The Live Preview mode allows users to watch their created animation loop in real time with play and pause controls. The Axis Editor mode provides interactive 3D gizmos that let users manually rotate and move individual body parts, displaying the exact numerical values for each axis to help with precise posing. Additionally, the application includes a custom skin function where users can upload an image file to change the character texture or reset it to the default look. Finally, as users adjust the keyframes or mirror settings, the tool automatically compiles all the data into a text box at the bottom, generating a final Stop_Expression code that can be copied and used directly in external projects.
 
-H2: Preview
+H1: Preview
 
 [embed](https://youtu.be/vgnjFww0otU?si=b65paLUWRSjwdIVx)
 
