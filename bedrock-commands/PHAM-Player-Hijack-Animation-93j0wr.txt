@@ -75,15 +75,30 @@ v.leftarm.ypos
 
 H1: Generating Stop Expression
 
-[img](https://raw.githubusercontent.com/Azizanzz0/Image/refs/heads/main/Tak%20berjudul55_20260907220502.jpg)
+[img](https://raw.githubusercontent.com/Azizanzz0/Image/refs/heads/main/Tak%20berjudul55_20260907220502.jpg|https://azizanzz0.github.io/Image/Websife.html)
 
-[link][Player Animator](https://azizanzz0.github.io/Image/Websife.html)
+[link][SEE (Stop Expression Editor)](https://azizanzz0.github.io/Image/Websife.html)
 
 TEXT: serves as a 3D animation and posing tool for a block based character model. Its primary purpose is to help users visually create animations and automatically generate the complex mathematical code needed for custom game setups. The application features a split interface with an animation configuration panel on the left and a 3D viewport on the right.[[br]]
 
 TEXT: Users can add specific body parts or bones to animate, such as the head, body, arms, and legs. For each bone, users can create multiple animation keyframes by setting the start time, duration, starting value, target value, and choosing from a wide variety of easing functions like linear, bounce, or elastic curves. To speed up the animation process, the tool includes toggles to automatically mirror the movements of the arms and legs.[[br]]
 
 TEXT: The 3D viewport offers two main viewing modes. The Live Preview mode allows users to watch their created animation loop in real time with play and pause controls. The Axis Editor mode provides interactive 3D gizmos that let users manually rotate and move individual body parts, displaying the exact numerical values for each axis to help with precise posing. Additionally, the application includes a custom skin function where users can upload an image file to change the character texture or reset it to the default look. Finally, as users adjust the keyframes or mirror settings, the tool automatically compiles all the data into a text box at the bottom, generating a final Stop_Expression code that can be copied and used directly in external projects.
+
+H1: How to Use
+
+[img](https://raw.githubusercontent.com/Azizanzz0/Image/main/Proyek%20Baru%202%20%5B36016BF%5D.gif)
+
+TEXT: copy the generated stop_expression code to your clipboard. Next, launch Minecraft, enter your world, and place a Command Block on the ground. Open the Command Block's interface and type out the base animation command: 𝚙𝚕𝚊𝚢𝚊𝚗𝚒𝚖𝚊𝚝𝚒𝚘𝚗 @𝚙 𝚊𝚗𝚒𝚖𝚊𝚝𝚒𝚘𝚗.𝚠𝚒𝚝𝚌𝚑.𝚐𝚎𝚗𝚎𝚛𝚊𝚕 𝚗 𝟶 "" 𝚗𝚊𝚖𝚎. Finally, paste your copied code at the very end of the command line, specifically replacing the §o[stop_expression: string]§r syntax section, to apply your custom animation setup to the player.
+
+H3: Syntax
+
+NOTE: §l/playanimation <entity: target> <animation: string> [next_state: string] [blend_out_time: float] [stop_expression: string] [controller: string]
+
+H3: Example
+
+CMD:CHAT
+/playanimation @s animation.witch.general n 0 "v.rightarm.z=math.cos(360*q.life_time)*90;" test
 
 H1: Preview
 
@@ -93,6 +108,7 @@ H1: Preview
 
 [embed](https://youtu.be/OU9g5v0eRLk?si=SlVMxCEsihfUSBru)
 
-[img](https://raw.githubusercontent.com/Azizanzz0/Image/01861e1c0cc7baf17cbd32e662a7f7672f86685c/Tak%20berjudul41_20260712113224.jpg)
-
-[link][Account TikTok](https://www.tiktok.com/@zeluckymc)
+SOCIAL: ZeLuckyMc
+URL: https://www.tiktok.com/@zeluckymc
+AVATAR: https://raw.githubusercontent.com/Azizanzz0/Image/01861e1c0cc7baf17cbd32e662a7f7672f86685c/Tak%20berjudul41_20260712113224.jpg
+STAT: Followers|1.4K
