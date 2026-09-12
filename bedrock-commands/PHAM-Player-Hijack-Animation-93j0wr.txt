@@ -7,7 +7,7 @@ TAG: complex,visual,playanimation
 H1: Command Block
 
 CMD:R:AA:U:100
-playanimation @a animation.wolf.shaking z 0 "v.body_head.xzscale=v.body_head.xzscale??1;v.body_head.yscale=v.body_head.yscale??1;v.body.scale=v.body.scale??1;v.head.scale=v.head.scale??1;v.root.x=v.root.x??0;v.root.z=v.root.z??0;v.root.xpos=v.root.xpos??0;v.root.ypos=v.root.ypos??0;v.root.zpos=v.root.zpos??0;v.body.x=v.body.x??0;v.body.y=v.body.y??0;v.body.z=v.body.z??0;v.body.xpos=v.body.xpos??0;v.body.ypos=v.body.ypos??0;v.head.x=v.head.x??0;v.head.y=v.head.y??0;v.head.z=v.head.z??0;v.head.xpos=v.head.xpos??0;v.head.ypos=v.head.ypos??0;v.head.zpos=v.head.zpos??0;v.rightleg.x=v.rightleg.x??0;v.leftleg.x=v.leftleg.x??0;v.rightarm.x=v.rightarm.x??0;v.leftarm.x=v.leftarm.x??0;v.rightarm.y=v.rightarm.y??0;v.leftarm.y=v.leftarm.y??0;v.rightarm.z=v.rightarm.z??0;v.leftarm.z=v.leftarm.z??0;v.rightarm.ypos=v.rightarm.ypos??0;v.leftarm.ypos=v.leftarm.ypos??0;v.body_rot_z=v.body.z+45*v.is_first_person;" zrot.body
+playanimation @a animation.wolf.shaking z 0 "v.body_head.xzscale=v.body_head.xzscale??1;v.body_head.yscale=v.body_head.yscale??1;v.body.scale=v.body.scale??1;v.head.scale=v.head.scale??1;v.root.x=v.root.x??0;v.root.z=v.root.z??0;v.root.xpos=v.root.xpos??0;v.root.ypos=v.root.ypos??0;v.root.zpos=v.root.zpos??0;v.body.x=v.body.x??0;v.body.y=v.body.y??0;v.body.z=v.body.z??0;v.body.xpos=v.body.xpos??0;v.body.ypos=v.body.ypos??0;v.head.x=v.head.x??0;v.head.y=v.head.y??0;v.head.z=v.head.z??0;v.head.xpos=v.head.xpos??0;v.head.ypos=v.head.ypos??0;v.head.zpos=v.head.zpos??0;v.rightleg.x=v.rightleg.x??0;v.leftleg.x=v.leftleg.x??0;v.rightarm.x=v.rightarm.x??0;v.leftarm.x=v.leftarm.x??0;v.rightarm.y=v.rightarm.y??0;v.leftarm.y=v.leftarm.y??0;v.rightarm.z=v.rightarm.z??0;v.leftarm.z=v.leftarm.z??0;v.rightarm.ypos=v.rightarm.ypos??0;v.leftarm.ypos=v.leftarm.ypos??0;v.item.x=v.item.x??0;v.item.y=v.item.y??0;v.item.z=v.item.z??0;v.item.xpos=v.item.xpos??0;v.item.ypos=v.item.ypos??0;v.item.zpos=v.item.zpos??0;v.body_rot_z=v.body.z+45*v.is_first_person;" zrot.body
 CMD:C:AA:U:0
 playanimation @a animation.happy_ghast.scale s 0 "v.scale=v.body.scale+(v.head.scale?(v.head.scale>0?1/v.head.scale:-1/v.head.scale):1000000)-1;" scale.body?head
 CMD:C:AA:U:0
@@ -27,11 +27,11 @@ playanimation @a animation.player.move.legs x 0 "v.tcos0=(v.rightleg.x-v.leftleg
 CMD:C:AA:U:0
 playanimation @a animation.player.move.legs.single x 0 "v.tcos0=(v.leftleg.x+v.rightleg.x)/2-v.body.x;" xrot.leg_2
 CMD:C:AA:U:0
-playanimation @a animation.zombie.melee_spear_use xyz 0 "v.tp_melee_spear_base_arm_rotation_x=-q.target_x_rotation+q.is_sneaking*27+this;v.tp_melee_spear_use_arm_rotation_x=v.is_holding_left*(-this*0.5-18)-10*(math.sin((1-math.pow(1-v.attack_time,4))*180)*1.2+math.sin(v.attack_time*180)-v.leftarm.x/10)+math.cos(q.modified_distance_moved*38.17)*q.modified_move_speed/v.gliding_speed_value*57.3;v.tp_melee_spear_use_arm_rotation_y=math.clamp(q.target_y_rotation,-60,45)-this-v.leftarm.y;v.tp_melee_spear_use_arm_rotation_z=v.leftarm.z;v.tp_melee_spear_use_item_rotation_x=-22.5;" xyzrot.leftarm
+playanimation @a animation.zombie.melee_spear_use xyz 0 "v.tp_melee_spear_base_arm_rotation_x=-q.target_x_rotation+q.is_sneaking*27+this;v.tp_melee_spear_use_arm_rotation_x=v.is_holding_left*(-this*0.5-18)-10*(math.sin((1-math.pow(1-v.attack_time,4))*180)*1.2+math.sin(v.attack_time*180)-v.leftarm.x/10)+math.cos(q.modified_distance_moved*38.17)*q.modified_move_speed/v.gliding_speed_value*57.3;v.tp_melee_spear_use_arm_rotation_y=math.clamp(q.target_y_rotation,-60,45)-this-v.leftarm.y;v.tp_melee_spear_use_arm_rotation_z=v.leftarm.z;v.tp_melee_spear_use_item_rotation_x=v.item.x/2-22.5;" xyzrot.leftarm
 CMD:C:AA:U:0
 playanimation @a animation.humanoid.melee_spear_use xyz 0 "v.tp_melee_spear_base_arm_rotation_x=-q.target_x_rotation+q.is_sneaking*27+this;v.tp_melee_spear_use_arm_rotation_x=v.is_holding_right*(-this*0.5-18)-30*(math.sin((1-math.pow(1-v.attack_time,4))*180)*1.2+math.sin(v.attack_time*180)-v.rightarm.x/30)-math.cos(q.modified_distance_moved*38.17)*q.modified_move_speed/v.gliding_speed_value*57.3;v.tp_melee_spear_use_arm_rotation_y=(math.sin((1-math.pow(1-v.attack_time,4))*180)?90*math.sin((1-math.pow(1-v.attack_time,4))*180)-30:0)-math.clamp(q.target_y_rotation,-60,45)+this+v.rightarm.y;v.tp_melee_spear_use_arm_rotation_z=v.rightarm.z-v.leftarm.z;" xyzrot.rightarm
 CMD:C:AA:U:0
-playanimation @a animation.player.first_person.melee_spear_use n 0 "v.fp_melee_spear_use_item_position_x=1.5;v.fp_melee_spear_use_item_position_y=1;v.fp_melee_spear_use_item_position_z=-0.5;" fix_rot?pos.item
+playanimation @a animation.player.first_person.melee_spear_use n 0 "v.fp_melee_spear_use_item_position_x=1.5+v.item.xpos;v.fp_melee_spear_use_item_position_y=1+v.item.ypos;v.fp_melee_spear_use_item_position_z=v.item.zpos-0.5;v.fp_melee_spear_use_item_rotation_y=v.item.y-55;v.fp_melee_spear_use_item_rotation_z=12.5+v.item.z;" fix_rot?pos.item
 CMD:C:AA:U:0
 playanimation @a animation.player.first_person.map_hold_attack y 0 "v.map_angle=0;v.attack_time=0;v.short_arm_offset_right=-(math.sin(v.first_person_item_rotation_factor*(1-v.attack_time)*(1-v.attack_time)*200)*1.75)+v.rightarm.ypos;v.short_arm_offset_left=-(math.sin(v.first_person_item_rotation_factor*(1-v.attack_time)*(1-v.attack_time)*200)*3.75-v.first_person_item_rotation_factor*v.attack_time*1.25)+v.leftarm.ypos;" ypos.rightarm?leftarm
 
@@ -72,6 +72,12 @@ v.leftarm.x
 v.leftarm.y
 v.leftarm.z
 v.leftarm.ypos
+v.item.x
+v.item.y
+v.item.z
+v.item.xpos
+v.item.ypos
+v.item.zpos
 
 H1: Generating Stop Expression
 
